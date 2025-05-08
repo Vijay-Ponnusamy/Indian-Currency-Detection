@@ -1,0 +1,16 @@
+pip install ultralytics
+or
+if any error use:  pip install ultralytics --timeout=120
+
+==================
+
+
+to train
+
+yolo task=detect mode=train data="####path of data.yaml#####" model="yolov8n.pt" epochs=10 imgsz=640 batch=16 project="######output path#######" name="train"
+
+
+====================================
+to test:
+
+yolo task=detect mode=predict model="D:\output\train\weights\best.pt" source="C:\Users\adhiy\Downloads\test.jpg"
